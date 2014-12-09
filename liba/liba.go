@@ -1,11 +1,13 @@
 package liba
 
-import "github.com/rsc/go-get-issue-9224-lib/libb"
-
 func Foo() string {
 	return "foo"
 }
 
+func Bar() string {
+	return "bar"
+}
+
 func FooBar() string {
-	return Foo() + libb.Bar()
+	return Foo() + Bar()
 }
